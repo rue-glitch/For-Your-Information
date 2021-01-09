@@ -18,9 +18,13 @@ nav {
     position: absolute;
     width: 100%;
 }
-nav ul {
-    text-align: center;
+.login {
+  text-align: left;
 }
+.nav-bar{
+    float: right;
+}
+
 nav ul li {
     font-size: 16px;
     display: inline-block;
@@ -68,4 +72,12 @@ nav li a:hover {
     50% {
       border-color: transparent
     }
+  }
+  .signup {
+    float: right;
+    margin: 20px 20px;
+    padding: 10px;
+    border: 5px solid #e6a7cd;
+    color: rgb(136, 136, 136);
+    text-decoration: none;
   }
