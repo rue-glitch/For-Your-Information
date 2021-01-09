@@ -1,0 +1,71 @@
+body, ul, li, h1, h2, a {
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+header {
+    color: rgb(136, 136, 136);
+    background-color: #e6a7cd;
+    padding: 6px 12px;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+}
+h1 {
+    text-align: center;
+}
+nav {
+    position: absolute;
+    width: 100%;
+}
+nav ul {
+    text-align: center;
+}
+nav ul li {
+    font-size: 16px;
+    display: inline-block;
+    padding: 30px 20px;
+}
+nav li a {
+    text-decoration: none;
+    color: rgb(136, 136, 136);
+    text-transform: uppercase;
+}
+nav li a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #DF744A;
+}
+.banner img {
+    max-width: 100%;
+}
+
+.wrapper {
+    /* height: 100vh; */
+    /*This part is important for centering*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .typing-demo {
+    width: 22ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
