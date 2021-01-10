@@ -8,91 +8,52 @@
     <link rel="stylesheet" href="loginstyle.css">
 </head>
 <body>
-  <nav>
-    <ul>
-        <li class="login">
-            <a href="login.html">sign up</a>
-        </li>
-        <li class="nav-bar">
-            <a href="campaign.html" class="campaign">Campaigns</a>
-        </li>
-        <li class="nav-bar">
-            <a href="issues.html" class="issues">World Issues</a>
-        </li>
-        <li class="nav-bar">
-            <a href="ourMission.html" class="mission">Our Mission</a>
-        </li> 
-        <li class="nav-bar">
-            <a href="index.html" class="home">Home </a>
-        </li>
-    </ul>
-</nav>
-  <header class="banner">
-      <img src="img/login.jpg" alt="background">
-      <h1>Sign Up!</h1>
-      <section class="format">
-          <p>Please enter your details</p>
-      </section>
-  </header>
-    <form>
+    <nav>
+        <ul>
+            <li class="login">
+                <a href="login.html">Sign up</a>
+            </li>
+            <li class="nav-bar">
+                <a href="campaign.html" class="campaign">Campaigns</a>
+            </li>
+            <li class="nav-bar">
+                <a href="issues.html" class="issues">World Issues</a>
+            </li>
+            <li class="nav-bar">
+                <a href="ourMission.html" class="mission">Our Mission</a>
+            </li> 
+            <li class="nav-bar">
+                <a href="index.html" class="home">Home </a>
+            </li>
+        </ul>
+    </nav>
+        <header class="banner">
+          <img src="img/login.jpg" alt="background">
+          <h1>Log in!</h1>
+          <section class="format">
+              <p>Welcome back! Sign into your account!</p>
+          </section>
+      </header>
+
       <br><br>
-      <div class="username">
-        <label for="uname">Username</label>
-        <input type = "text" id="userName" placeholder="Enter a username" required>
-      </div>
-      <br><br>
-      <div class="email">
-        <label for="email">Email</label>
-        <input type="email" id = "userEmail" onblur="checkUserSIEmail()" placeholder="Enter your email" required> 
-      <br>
-      <small id = "userSIEmailError">Please provide a valid email address</small>
-      </div>
-      <br><br>
-      <div class="trigger-warning">
-        <label for="triggerWarning">Trigger Warnings: Please list your triggers separated by a comma</label>
-        <br>
-        <input type="text" id="triggerList" placeholder="Please list your triggers">
-      </div>
-      <br><br>
-      <div class="password">
-        <label for = "password">Password</label>
-        <input type = "password" placeholder="Enter your password" required>
-        <br>
-        <input type= "reset" class="reset">
-      </div>
-      
-      <br><br>
-      <button type = "button" onclick="signIn()">Sign In</button>
-    </form>
-    <p>Already a #fyi-member? Sign in: 
-      <a href= "signin.html"><strong>SIGN IN</strong></a></p>
+ <form>
+    <div class="username">
+  <label for="uname">Username</label>
+  <input type= "text" id="userName" placeholder="Enter a username" required>
+  </div>
+  <br> <br>
 
+  <div class="password">
+    <label for= "password">Password</label>
+    <input type= "password" placeholder="Enter your password" required>
+  </div>
+  <br> <br>
+  <button type= "button" onclick="signIn()">Sign In</button>
+  <br><br>
+  <button type="button">Forget your username/password</button>
+  </div>
 
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-analytics.js"></script>
-
-<script>
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  var firebaseConfig = {
-    apiKey: "AIzaSyCYYot6oKs8N6MJyTfBgTOft6Y8IPBF_cI",
-    authDomain: "for-your-information-ed978.firebaseapp.com",
-    projectId: "for-your-information-ed978",
-    storageBucket: "for-your-information-ed978.appspot.com",
-    messagingSenderId: "717739130617",
-    appId: "1:717739130617:web:6c96a7b44db15d35c5ac28",
-    measurementId: "G-6DFMWMD8QF"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-</script>
-
-
-    
-</body>
-</html>
+</form>
+ 
+  </body>
+  </html>
