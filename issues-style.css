@@ -7,9 +7,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
-body {
-    display: flex;
+ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -23,7 +21,7 @@ section {
     min-height: 100vh;
     flex-wrap: wrap;
     transform-style: preserve-3d;
-    width: 1100px;
+    max-width: 100%;
 }
 
 section .card {
@@ -35,8 +33,7 @@ section .card {
     perspective: 1000px;
 }
 
-section .card .box
-{
+section .card .box {
     position: absolute;
     top: 0;
     left: 0;
@@ -97,4 +94,51 @@ section .card .box .contentBx div h2 {
 section .card .box .contentBx div p {
     color: #fff;
     font-size: 16px;
+}
+nav {
+    max-width: 100%;
+    background-color: rgb(36, 36, 36);
+    border: 2px solid lightgray;
+    white-space: nowrap;
+}
+.login {
+  text-align: left;
+}
+.nav-bar{
+    float: right;
+}
+nav ul li {
+    font-size: 16px;
+    display: inline-block;
+    padding: 30px 20px;
+}
+nav li a {
+    text-decoration: none;
+    color: rgb(136, 136, 136);
+    text-transform: uppercase;
+}
+nav li a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #DF744A;
+}
+@media screen and (max-width: 650px) {
+    .login {
+        display: block;
+        text-align: left;
+        padding: 10px;
+        padding-top: 20px;
+        font-size: 14px;
+    }
+    .nav-bar {
+        float: none;
+        display: block;
+        text-align: left;
+        padding: 10px;
+        padding-bottom: 20px;
+        font-size: 14px;
+    }
+    section .card {
+        max-width: 100%;
+    }
 }
