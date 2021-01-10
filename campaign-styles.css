@@ -118,7 +118,7 @@ nav li a:hover {
 .img-wrap:hover {
     opacity: 0.5;
 }
-/*css styling for search button*/
+
   form {
     background-color: #4654e1;
     width: 300px;
@@ -157,7 +157,7 @@ nav li a:hover {
     height: 44px;
   }
 
- /*end of css styling for search button*/
+  
 
 
 @media screen and (max-width: 1400px) {
