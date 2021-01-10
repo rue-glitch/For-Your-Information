@@ -3,17 +3,6 @@ body, ul, li, h1, h2, a {
     padding: 0;
     font-family: arial;
 }
-header {
-    color: rgb(136, 136, 136);
-    background-color: #e6a7cd;
-    padding: 6px 12px;
-    position: absolute;
-    left: 30%;
-    top: 30%;
-}
-h1 {
-    text-align: center;
-}
 nav {
     position: absolute;
     width: 100%;
@@ -40,28 +29,35 @@ nav li a:hover {
     font-weight: bold;
     color: #DF744A;
 }
-.banner img {
-    max-width: 100%;
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
-.wrapper {
-    /* height: 100vh; */
-    /*This part is important for centering*/
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .typing-demo {
-    width: 22ch;
-    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    font-family: monospace;
-    font-size: 2em;
-  }
-  
+.banner .title{
+  width: 22ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+  color: rgb(136, 136, 136);
+  position: absolute;
+  background-color: #e6a7cd;
+  padding: 6px 12px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.banner img {
+  max-width: 100%;
+  z-index: -1;
+}
+
   @keyframes typing {
     from {
       width: 0
@@ -81,3 +77,24 @@ nav li a:hover {
     color: rgb(136, 136, 136);
     text-decoration: none;
   }
+
+@media screen and (max-width: 650px) {
+    .login {
+        display: block;
+        text-align: left;
+        padding: 10px;
+        padding-top: 20px;
+        font-size: 14px;
+    }
+    .nav-bar {
+        float: none;
+        display: block;
+        text-align: left;
+        padding: 10px;
+        padding-bottom: 20px;
+        font-size: 14px;
+    }
+    .banner .title {
+      top: 90%;
+    }
+}
