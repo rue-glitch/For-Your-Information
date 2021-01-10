@@ -30,20 +30,28 @@ nav li a:hover {
     font-weight: bold;
     color: #DF744A;
 }
-header {
+.banner {
     background-color: rgb(36, 36, 36);
     text-align: center;
     max-width: 100%;
     border-left: 2px solid lightgray;
     border-right: 2px solid lightgray;
+    position: relative;
 }
-header h1 {
+.banner h1 {
     color: #8FD8D2;
-    padding: 20px 20px;
-    background-color: rgb(36, 36, 36);
     z-index: 1;
-    border-bottom: 2px solid darkgrey;
+    padding: 10px;
     font-size: 60px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.banner img {
+    max-width: 100%;
+    opacity: 0.7;
+    z-index: -1;
 }
 .format {
     color: #8FD8D2;
@@ -70,7 +78,7 @@ header h1 {
 .icons {
     text-align: center;
     margin: 4px 0;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     position: relative;
 }
 .icons li {
