@@ -138,6 +138,7 @@ form {
     max-width: 65%;
     z-index: -1;
     color: white;
+    align-items: center;
 }
 input {
     all: unset;
@@ -149,8 +150,8 @@ input {
     padding: 0 10px;
 }
   
-::placeholder {
-    color: #white;
+div::placeholder {
+    color: white;
     opacity: 0.7; 
     font-style: 'Poppins', sans-serif;
     text-align: left;
@@ -170,47 +171,6 @@ button {
 }
 
  /*end of css styling for search button*/
-
-  form {
-    background-color: #4654e1;
-    width: 300px;
-    height: 44px;
-    border-radius: 5px;
-    display:flex;
-    flex-direction:row;
-    align-items:center;
-  }
-  
-  input {
-    all: unset;
-    font: 16px system-ui;
-    height: 100%;
-    width: 100%;
-    padding: 6px 10px;
-  }
-  
-  ::placeholder {
-    color: #fff;
-    opacity: 0.7; 
-  }
-  
-  svg {
-    color: #fff;
-    fill: currentColor;
-    width: 24px;
-    height: 24px;
-    padding: 10px;
-  }
-  
-  button {
-    all: unset;
-    cursor: pointer;
-    width: 44px;
-    height: 44px;
-  }
-
-  
-
 
 @media screen and (max-width: 1400px) {
     header h1 {
@@ -269,5 +229,8 @@ button {
     }
     .icons li {
         width: 100%;
+    }
+    .format {
+        white-space: normal;
     }
 }
