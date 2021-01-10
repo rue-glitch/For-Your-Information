@@ -5,28 +5,68 @@
     <title>
         Login Page
     </title>
+    <link rel="stylesheet" href="loginstyle.css">
 </head>
 <body>
-  <div>
-  <h1>Please enter your details</h1>
-  <div class="userInfoForm">
-  <form>
-  <label for="uname">Username</label>
-  <input type = "text" id="userName" placeholder="Please enter a username">
-  <label for="email">Email</label>
-  <input type="email" id = "userEmail" onblur="checkUserSIEmail()" placeholder="Please enter your email"> 
-  <small id = "userSIEmailError">Please provide a valid email address</small>
-  <label for="triggerWarning">Trigger Warnings: Please list your triggers separated by a comma</label>
-  <input type="text" id="triggerList" placeholder="Please list your triggers">
-  <label for = "password">Password</label>
-  <input type = "password" placeholder="Please enter your password">
-  <input type = "reset">
-  </div>
-  <button type = "button" onclick="signIn()">Sign In</button>
-</form>
-<p>Already a #fyi-member? Sign in: <a href= "signin.html"><strong>SIGN IN</strong></a></p>
+  <nav>
+    <ul>
+        <li class="login">
+            <a href="login.html">sign up</a>
+        </li>
+        <li class="nav-bar">
+            <a href="campaign.html" class="campaign">Campaigns</a>
+        </li>
+        <li class="nav-bar">
+            <a href="issues.html" class="issues">World Issues</a>
+        </li>
+        <li class="nav-bar">
+            <a href="ourMission.html" class="mission">Our Mission</a>
+        </li> 
+        <li class="nav-bar">
+            <a href="index.html" class="home">Home </a>
+        </li>
+    </ul>
+</nav>
+  <header class="banner">
+      <img src="img/login.jpg" alt="background">
+      <h1>Sign Up!</h1>
+      <section class="format">
+          <p>Please enter your details</p>
+      </section>
+  </header>
+    <form>
+      <br><br>
+      <div class="username">
+        <label for="uname">Username</label>
+        <input type = "text" id="userName" placeholder="Enter a username" required>
+      </div>
+      <br><br>
+      <div class="email">
+        <label for="email">Email</label>
+        <input type="email" id = "userEmail" onblur="checkUserSIEmail()" placeholder="Enter your email" required> 
+      <br>
+      <small id = "userSIEmailError">Please provide a valid email address</small>
+      </div>
+      <br><br>
+      <div class="trigger-warning">
+        <label for="triggerWarning">Trigger Warnings: Please list your triggers separated by a comma</label>
+        <br>
+        <input type="text" id="triggerList" placeholder="Please list your triggers">
+      </div>
+      <br><br>
+      <div class="password">
+        <label for = "password">Password</label>
+        <input type = "password" placeholder="Enter your password" required>
+        <br>
+        <input type= "reset" class="reset">
+      </div>
+      
+      <br><br>
+      <button type = "button" onclick="signIn()">Sign In</button>
+    </form>
+    <p>Already a #fyi-member? Sign in: 
+      <a href= "signin.html"><strong>SIGN IN</strong></a></p>
 
-  </div>
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>

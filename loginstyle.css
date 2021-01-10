@@ -57,100 +57,101 @@ nav li a:hover {
 }
 .format {
     color: #8FD8D2;
-    padding: 10px;
+    padding: 20px;
     font-size: 24px;
 }
-.orgs {
+form {
     text-align: center;
-    margin: 4px 0;
-    position: relative;
-    list-style: none;
+    color: darkgray;
 }
-.orgs li {
-    border: 4px solid darkgrey;
+form label {
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
 }
-.orgs .img-wrap img {
-    max-width: 100%;
-    max-height: 200px;
+form input {
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 28px;
+    border: 4px solid #8FD8D2;
 }
-.img-wrap {
-    position: relative;
+small {
+    font-size: 0.75em;
+    font-weight:bold;
 }
-.descr {
-    display: inline;
-    position: absolute;
-    top: 40%;
-    left: 0;
-    right: 0;
-    visibility: hidden;
-    opacity: 0;
-    color: rgb(36, 36, 36);
-    background-color: lightgray;
-    font-size: 20px;
-    padding: 10px 10px;
-    border: 4px solid white;
+button{
+    font-size: 18px;
+    border: 2px solid #8FD8D2;
+    border-radius: 28px;
+    font-weight: bold;
+    background-color: #8FD8D2;
+    padding: 15px 32px;
+    color: white;
 
-    /* transition: opactiy .2s, visibility .2s; */
 }
-.img-wrap:hover .descr {
-    visibility: visible;
-    opacity: 1;
+button:hover {
+    text-decoration: underline;
 }
-.img-wrap:hover {
-    opacity: 0.5;
+button:focus {
+    border: 4px dashed darkgray;
 }
-
-@media screen and (max-width: 1400px) {
-    .banner h1 {
-        font-size: 72px;
-    }
-    .banner img {
-        max-width: 100%;
-    }
+div {
+    border: 2px solid darkgray;
+    padding: 20px 20px;
+    display:inline-block;
 }
-@media screen and (max-width: 1000px) {
-    .banner h1 {
-        font-size: 72px;
-
-    }
-    .format {
-        font-size: 20px;
-    }
-    .descr {
-        font-size: 16px;
-    }
+p {
+    color: darkgray;
+    text-align: center;
+    font-weight: bold;
 }
-@media screen and (max-width: 800px) {
-    .descr {
-        font-size: 16px;
-    }
+p a{
+    text-decoration: none;
+    color: #8FD8D2;
+}
+p a:hover {
+    text-decoration: underline;
+}
+.username {
+    padding: 20px 100px;
+}
+.email {
+    padding: 20px 130px;
+}
+.password {
+    padding: 20px 100px;
+}
+form input:focus {
+    border: 4px dashed darkgray;
+}
+.reset {
+    background-color: #8FD8D2;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+.trigger-warning input {
+    padding: 10px 150px;
 }
 @media screen and (max-width: 650px) {
     .login {
         display: block;
-        text-align: left;
-        padding: 10px;
+        text-align: center;
+        padding: 20px;
         padding-top: 20px;
         font-size: 14px;
     }
     .nav-bar {
         float: none;
         display: block;
-        text-align: left;
+        text-align: center;
         padding: 10px;
         padding-bottom: 20px;
         font-size: 14px;
-    }
-    .banner {
-        white-space: normal;
-    }
-    header h1 {
-        font-size: 40px;
-        position: relative;
-    }
-    .format {
-        font-size: 16px;
-        top: auto;
-        left: auto;
+
     }
 }
